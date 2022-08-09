@@ -28,8 +28,8 @@ public class TransferController {
 	}
 
 	@PostMapping
-    public void saveTransaction(@RequestBody Transaction transaction) {
+    	public void saveTransaction(@RequestBody Transaction transaction) {
 		transferService.saveTransaction(transaction);
-    }
+    	}
 
 }
