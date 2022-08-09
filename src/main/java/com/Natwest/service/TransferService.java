@@ -10,14 +10,14 @@ import com.Natwest.repository.TransferRepository;
 public class TransferService {
 
 	@Autowired
-    private TransferRepository transferRepository;
+   	private TransferRepository transferRepository;
 
-    public List<Transaction> getTransactions() {
-        return transferRepository.getTransactions();
-    }
+    	public List<Transaction> getTransactions() {
+        	return transferRepository.getTransactions();
+   	 }
 
-    public void saveTransaction(Transaction transaction) {
-        transferRepository.saveTransaction(transaction);
-    }
+    	public void saveTransaction(Transaction transaction) {
+        	transferRepository.saveTransaction(transaction);
+    	}
 
 }
