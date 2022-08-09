@@ -24,6 +24,5 @@ Transfer Objects:
 {"accountNumberSource":33333,"accountNumberDestination":11111,"amount":100.0}
 ]
 
-Tests have been provided to demonstrate creating a new TransferObjects by using POST.
-Retrieval of information can be done using GET. Each test in turn update the balance 
-to the source/target accounts.
+Tests have been provided to demonstrate the use of GET / POST operations on endpoints, 
+more specifically for transfer service.
