@@ -28,8 +28,8 @@ public class AccountController {
 	}
 	
 	@PostMapping
-    public void addAccount(@RequestBody Account account) {
-        accountService.saveAccount(account);
-    }
+    	public void addAccount(@RequestBody Account account) {
+        	accountService.saveAccount(account);
+    	}
 
 }
