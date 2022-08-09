@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>View: Accounts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Form</h1>
+    <form action="#" th:action="@{/accounts}" th:object="${accounts}" method="post">
+    	<p>Account Number: <input type="text" th:field="*{accountNumber}" /></p>
+        <p>Balance: <input type="text" th:field="*{balance}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+    
+    <br>
+
+    <h1>List</h1>
+    <table id="table" class="hidden">   
+    <thead>
+	    <tr>
+	        <th>Account Number</th>
+	        <th>Balance</th>
+	    </tr>
+    </thead>  
+     <tbody>     
+     <tr th:each="">         
+         <td th:text="" ></td>
+         <td th:text=""></td>
+      </tr>
+  </tbody>
+    
+</table>
+    
+</body>
+</html>
